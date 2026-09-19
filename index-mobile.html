@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+        name="viewport" />
+    <meta content="mobile_tab" name="shell-type" />
+    <title>Home Catalog - K K Spices And Herbs</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#e89519", "on-error": "#ffffff", "on-error-container": "#93000a", "surface-variant": "#e9e1dd", "primary-fixed-dim": "#ffb963", "surface-container-high": "#eee7e3", "background": "#fff8f5", "on-secondary-fixed-variant": "#7f2b00", "inverse-primary": "#ffb963", "on-primary-container": "#583500", "inverse-surface": "#33302d", "on-background": "#1e1b19", "on-primary-fixed": "#2b1700", "secondary-fixed-dim": "#ffb599", "surface-container": "#f4ece8", "on-primary-fixed-variant": "#663e00", "on-primary": "#ffffff", "on-secondary-container": "#5a1c00", "on-secondary-fixed": "#370e00", "secondary-fixed": "#ffdbce", "on-tertiary-fixed-variant": "#005312", "surface-container-highest": "#e9e1dd", "tertiary-fixed": "#a3f69c", "secondary": "#a63b00", "surface-bright": "#fff8f5", "on-surface": "#1e1b19", "secondary-container": "#fc6c29", "primary-fixed": "#ffddb9", "outline-variant": "#d8c3ae", "on-tertiary-fixed": "#002204", "on-surface-variant": "#534435", "tertiary-container": "#69b966", "error-container": "#ffdad6", "inverse-on-surface": "#f7efeb", "surface-container-lowest": "#ffffff", "primary": "#865300", "outline": "#867462", "surface": "#fff8f5", "on-tertiary": "#ffffff", "surface-dim": "#e0d8d5", "surface-tint": "#865300", "tertiary-fixed-dim": "#88d982", "error": "#ba1a1a", "on-tertiary-container": "#00470e", "tertiary": "#1b6d24", "on-secondary": "#ffffff", "surface-container-low": "#faf2ee" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin": "3rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-xl": ["Epilogue"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Epilogue"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Epilogue"], "headline-lg-mobile": ["Epilogue"], "headline-sm": ["Epilogue"], "display-hero-mobile": ["Epilogue"], "body-lg": ["Plus Jakarta Sans"], "display-hero": ["Epilogue"], "headline-lg": ["Epilogue"], "body-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.015em", "fontWeight": "800" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } }</script>
+    <style>
+        @layer base {
+
+            html,
+            body {
+                width: 100%;
+                min-height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: #fff8f5;
+                color: #1e1b19;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .pb-safe {
+                padding-bottom: env(safe-area-inset-bottom, 0px);
+            }
+
+            .pt-safe {
+                padding-top: env(safe-area-inset-top, 0px);
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface flex flex-col min-h-screen">
+    <header
+        class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(58,42,10,0.05)]">
+        <div class="h-16 px-margin-mobile flex items-center justify-between">
+            <div class="flex items-center gap-space-sm"><button aria-label="Navigation Menu"
+                    class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container active:scale-95 transition-all"><span
+                        class="material-symbols-outlined text-[24px]">menu</span></button>
+                <div class="flex flex-col"><span
+                        class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">K K
+                        SPICES</span><span
+                        class="font-label-sm text-label-sm text-secondary tracking-wider uppercase">&amp; Herbs
+                        Exporters</span></div>
+            </div>
+            <div class="flex items-center gap-space-xs"><a aria-label="Call Wholesale Desk"
+                    class="h-11 px-space-sm rounded-lg bg-primary-container/20 text-on-primary-container flex items-center gap-1 font-label-md text-label-md active:scale-95 transition-transform"
+                    href="tel:+919558804605"><span
+                        class="material-symbols-outlined text-[18px] text-primary">call</span><span
+                        class="hidden xs:inline font-label-md text-label-md">Inquire</span></a>
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-1 w-full pt-16 pb-20 bg-surface flex flex-col">
+        <div class="flex flex-col w-full">
+            <!-- Dynamic Hero Banner with Sensory Warmth -->
+            <section
+                class="relative overflow-hidden bg-gradient-to-b from-primary-fixed to-surface-container-low px-margin-mobile pt-space-lg pb-space-xl">
+                <!-- Subtle organic spice glow decoration -->
+                <div
+                    class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary-container/20 blur-3xl pointer-events-none">
+                </div>
+                <div
+                    class="absolute top-1/2 -left-12 w-48 h-48 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none">
+                </div>
+                <div class="relative z-10 flex flex-col gap-space-md">
+                    <!-- Quality Guarantee Badge -->
+                    <div
+                        class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-surface-container-lowest/90 shadow-sm">
+                        <span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+                        <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Perfect Balance
+                            of Taste and Quality</span>
+                    </div>
+                    <!-- Headline Block -->
+                    <div class="flex flex-col gap-1">
+                        <h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">
+                            K K Spices <span class="text-secondary">&amp; Herbs</span>
+                        </h1>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                            Manufacturer, Exporter, Wholesaler &amp; Supplier of 100% pure Indian spices direct from
+                            Gujarat to global markets.
+                        </p>
+                    </div>
+                    <!-- Hero Visual Preview Carousel / Staging -->
+                    <div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-lowest shadow-md">
+                        <div class="h-48 w-full relative">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Rich golden turmeric powder, fiery red chili powder, and green coriander cumin spice pouches standing together with raw whole star anise, cumin seeds, and cinnamon sticks resting around them on a warm rustic stone slate in soft natural morning sunlight."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuATqIXQxj5Phi3_iRAqC_q0Dy6NmLFmycgJRjhV9_h5nxTEtbyG6HWpemTPa_4fSzI-VjcTqVhJTQU0-25VEB2lA6hxUHNVrMOaFPzx_DCPiLV7bCCb8RkWwsjoaduZN2mXs0ZXGs2YgO3KWmzlhddUoF3ol40EA-R6Gm0sy2rHdwkluos9aWwOrRX1bWc9-8GNEzU_VXWsvbcUT89ZdGchcrvLLBE00MvTCpm3nEToHsUH-l2jebUueg" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-space-sm">
+                                <span
+                                    class="font-label-sm text-label-sm text-surface-bright bg-secondary/80 px-2 py-0.5 rounded backdrop-blur-sm">Farm
+                                    Fresh • Unadulterated</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Primary Action CTA Cluster -->
+                    <div class="grid grid-cols-2 gap-space-sm pt-1">
+                        <a class="h-12 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-sm active:scale-95 transition-transform"
+                            href="tel:+919558804605">
+                            <span class="material-symbols-outlined text-[20px]">call</span>
+                            <span>Call Wholesale</span>
+                        </a>
+                        <a class="h-12 rounded-lg bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-2 font-label-lg text-label-lg active:scale-95 transition-transform"
+                            href="#enquiry-section">
+                            <span class="material-symbols-outlined text-[20px]">feed</span>
+                            <span>Enquiry Form</span>
+                        </a>
+                    </div>
+                    <!-- Fast Trust Metrics Ticker -->
+                    <div class="grid grid-cols-3 gap-2 pt-2">
+                        <div
+                            class="bg-surface-container-lowest/80 backdrop-blur-sm p-2.5 rounded-xl flex flex-col items-center text-center shadow-sm">
+                            <span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+                            <span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">2019</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant">Est. Year</span>
+                        </div>
+                        <div
+                            class="bg-surface-container-lowest/80 backdrop-blur-sm p-2.5 rounded-xl flex flex-col items-center text-center shadow-sm">
+                            <span class="material-symbols-outlined text-secondary text-[20px]">person_check</span>
+                            <span class="font-label-md text-label-md text-on-surface mt-1 truncate w-full">Taral
+                                Patel</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant">Name of CEO</span>
+                        </div>
+                        <div
+                            class="bg-surface-container-lowest/80 backdrop-blur-sm p-2.5 rounded-xl flex flex-col items-center text-center shadow-sm">
+                            <span class="material-symbols-outlined text-tertiary text-[20px]">pin_drop</span>
+                            <span
+                                class="font-label-md text-label-md text-on-surface mt-1 truncate w-full">Gujarat</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant">Antalia GIDC</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured Pure Ground Spices (Sensory Cards) -->
+            <section class="px-margin-mobile py-space-xl flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col">
+                        <span
+                            class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Lab-Certified
+                            Purity</span>
+                        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Featured Powders
+                        </h2>
+                    </div>
+                    <span
+                        class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Retail
+                        &amp; Bulk</span>
+                </div>
+                <!-- Product Stack with Custom Spice Ribbons -->
+                <div class="flex flex-col gap-space-md">
+                    <!-- Card 1: Red Chilli Powder -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all">
+                        <div class="relative h-44 w-full bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Professional commercial packaging of Indian Red Chilli Powder packet by K K Spices with vibrant deep crimson spices spilled into a dark ceramic bowl, fresh dry red chillies around it on neutral polished surface."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNTNB_LSpIgEaITDQOUM3Zr2USgYzseP249ySPA6zF9TbQ-P28Vkvx9AILp8q2PZo90kDFmvKE5rR32A9W9mz0UY9vhKXw214OhdijKvs5BMHdCcyK2KR_Jfse-91Er3_N7cKVOqbB0x1jjWgbZyJgrJHDiAqEoXS3qh5O_YieeKC9NyCGNR5AfV1z_I55-RjE_yD1NJCPkG1aoFH64zyqXSs7w1HF7UOHdgHMOxbBn1LeoLsDOJDMqw" />
+                            <span
+                                class="absolute top-3 left-3 bg-red-700 text-white font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Fiery
+                                • No Added Colour</span>
+                            <span
+                                class="absolute bottom-3 right-3 bg-surface-container-lowest/95 text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded shadow-sm">500g
+                                / 200g</span>
+                        </div>
+                        <div class="p-space-md flex flex-col gap-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface">Red Chilli Powder</h3>
+                                <span
+                                    class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/30 px-2 py-0.5 rounded font-medium">Stemless
+                                    Grade</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Processed from chosen sun-dried
+                                red chillies with natural capsaicin richness and authentic intense warmth.</p>
+                            <div class="flex items-center justify-between pt-2">
+                                <span class="font-label-md text-label-md text-primary font-bold">Wholesale Packaging
+                                    Ready</span>
+                                <button
+                                    class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md active:scale-95 transition-transform flex items-center gap-1"
+                                    onclick="document.getElementById('enquiry-section').scrollIntoView({behavior: 'smooth'})">
+                                    <span>Quote</span>
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Turmeric Powder -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all">
+                        <div class="relative h-44 w-full bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="High-grade golden yellow Turmeric Powder pouch with raw whole turmeric rhizomes and pure vibrant yellow powder overflowing from an earthen bowl, warm sunlit studio setting."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkv2Mtq7Od3xur3yw7NgScbhbzWhbD_a1J4OGVhoXqexPrZ5nhzb-47AqZ44hdYbtuwmf9tem7uULWYqygnrllCK_pHumA306EDO6N1Y2xMsJdYl4Al9-4IDhXe2XNYb2j9iSoZ1H8HeKSNm5qIVN2bf20hwm-D-aVXTmHu1eRs15YKxlEptRkM4HCzLXHD0BrcNNAJsXI7VPc1VCtM3cE6O-wBXwTXm5RmVxbhxtqWE69s-dtNaJ1Jw" />
+                            <span
+                                class="absolute top-3 left-3 bg-amber-600 text-white font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Curcumin
+                                Rich • 100% Pure</span>
+                            <span
+                                class="absolute bottom-3 right-3 bg-surface-container-lowest/95 text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded shadow-sm">500g
+                                Stand-up</span>
+                        </div>
+                        <div class="p-space-md flex flex-col gap-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface">Turmeric Powder</h3>
+                                <span
+                                    class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/30 px-2 py-0.5 rounded font-medium">High
+                                    Curcumin</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Selected Salem &amp; Nizamabad
+                                varieties pulverized gently to preserve therapeutic essential oils.</p>
+                            <div class="flex items-center justify-between pt-2">
+                                <span class="font-label-md text-label-md text-primary font-bold">Export Grade A</span>
+                                <button
+                                    class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md active:scale-95 transition-transform flex items-center gap-1"
+                                    onclick="document.getElementById('enquiry-section').scrollIntoView({behavior: 'smooth'})">
+                                    <span>Quote</span>
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Cumin Coriander Powder -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all">
+                        <div class="relative h-44 w-full bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Dhana Jeera Cumin Coriander powder in a modern pouch standing next to dry coriander seeds and cumin in vintage brass spoons with lush green herbs in background, bright warm lighting."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0gxxC93yIIbYUdld72EL3HVEMXmkdDkyW1HXIrAYHrRgKRuG-4OZ_ipxv4zefwTOZGW6SZjBX1qZiCwd_rQLywx_7zgoTkm4MhW2ZRrvbleQdCpY2tDvndXt6miKeBiPUwdQ8OKDUQBpbccF45DH-wWEJlVk50Gtj7MhVAFJYqdKPlU0vlLJGu6HJLJdh1p1gPgKS0xdz0zwKC77FtAO-WwOf9BFlktCFc3Qszqaqu1k9Wuna_fQLUg" />
+                            <span
+                                class="absolute top-3 left-3 bg-emerald-700 text-white font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Classic
+                                Dhana Jeera Blend</span>
+                            <span
+                                class="absolute bottom-3 right-3 bg-surface-container-lowest/95 text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded shadow-sm">500g
+                                Sealed</span>
+                        </div>
+                        <div class="p-space-md flex flex-col gap-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface">Cumin Coriander Powder
+                                </h3>
+                                <span
+                                    class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/30 px-2 py-0.5 rounded font-medium">Traditional
+                                    Ratio</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">The soul of Gujarati and Indian
+                                curries, perfectly balanced for fragrant aromatics and gentle earthy notes.</p>
+                            <div class="flex items-center justify-between pt-2">
+                                <span class="font-label-md text-label-md text-primary font-bold">25kg / 50kg Bags
+                                    Avail.</span>
+                                <button
+                                    class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md active:scale-95 transition-transform flex items-center gap-1"
+                                    onclick="document.getElementById('enquiry-section').scrollIntoView({behavior: 'smooth'})">
+                                    <span>Quote</span>
+                                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Whole Spices Tactile Grid -->
+            <section class="bg-surface-container-low px-margin-mobile py-space-xl flex flex-col gap-space-md">
+                <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-1 text-secondary">
+                        <span class="material-symbols-outlined text-[18px]">grain</span>
+                        <span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Unjha &amp; Gujarat
+                            Mandi Direct</span>
+                    </div>
+                    <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Whole Spices Range</h2>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Machine cleaned, sortex graded, and
+                        packed in moisture-proof bulk packaging.</p>
+                </div>
+                <!-- 2-Column Responsive Card Grid -->
+                <div class="grid grid-cols-2 gap-space-sm">
+                    <!-- Cumin Seeds -->
+                    <div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col gap-2 shadow-sm">
+                        <div class="h-28 w-full rounded-lg overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A pristine ceramic white bowl heaped with premium aromatic brown Cumin seeds (Jeera), top down angle, sharp focus, clean warm background."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyxH_Px-68uFjC17lnLCv_2ZbBP9d54jliXUFifdGjduRwAmzQsJoTYiRGOeJl3cyhO4nWcM_qT0OCYbuykwGuhEsfsJs_NNsXeSGueYsrtMFCWinAlhUCATaVH0JsHkDrGaZ2iegta3E2u9DPm74A_u9EqGIwUNec3mhQ0rJuehInrrYncd40NL9PACbN6rSYxd3wuFS4xRi4oXPNw3Z8UqvaYnUbv3fQgj48Ka-HnXreTMQ49NVumw" />
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface">Cumin Seeds</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-medium">Jeera • Machine
+                                Cleaned</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Purity: 99.5%</span>
+                        </div>
+                    </div>
+                    <!-- Mustard Seeds -->
+                    <div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col gap-2 shadow-sm">
+                        <div class="h-28 w-full rounded-lg overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Ceramic bowl filled with small dark round Black Mustard seeds (Rai), close up shot highlighting oily sheen and texture, warm tone."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUAMy9kzDXqunjbR-48iACWDui0N2e4-cvJx2oi7fCedCRaIfQMAQgq0lc5ieAGAz4PtXjsiyCwvR-vuCOEhSvduAXgiqGHyU4SEPwZECNxdJxWTklORenXifFrgblP4-Gfu9wU4yp_-0n8FgJkEikGZ7RXUZyYO_JH7y-z0KBhSB-Sm9AsZGXoZOA4djwt3d5XZ-CbrsGUtwagd1k8s9ivSL1mHB5TZETYkFYI84Rn5GvxaW5F2y12A" />
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface">Mustard Seeds</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-medium">Rai • Bold Black</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">High Volatile
+                                Oil</span>
+                        </div>
+                    </div>
+                    <!-- Fennel Seeds -->
+                    <div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col gap-2 shadow-sm">
+                        <div class="h-28 w-full rounded-lg overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Natural green Fennel seeds (Saunf) sitting in a white bowl, showing fresh greenish tint and slender elongated seed structure, high quality photograph."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-4AO3Q3ONLNreeXYszuCb-0Enba0YBpAFvqsDhtlPnRNJfU1J8m1aO41IR2XDEJJlLe_j0iF3WflVDBZUC-PDXI3YM-lyEnItNZ1s0RNXnmiLdlsxPSMpSIWNUZacxUz3r0FL6k4xnND_ZikwDcpa37JTFy3tdRaEtPAYDZd_mIRv_MTJAv1T3JLCyJieAV-NXBhguKhje0ujdIGHnfB1E_UdQcMf2SfoSTxBY25SYGCUingerzt4bA" />
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface">Fennel Seeds</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-medium">Saunf • Green
+                                Bold</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Sweet Lucknowi
+                                Grade</span>
+                        </div>
+                    </div>
+                    <!-- Fenugreek Seeds -->
+                    <div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col gap-2 shadow-sm">
+                        <div class="h-28 w-full rounded-lg overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Golden-yellow angular Fenugreek seeds (Methi) packed neatly in a ceramic bowl on neutral counter, clean crisp product shot."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJs8b9KKUO8APoQKiQrG2DfeAEbGcCrz1lcOmDkcwqRabA4tt2Xqdf2j8dVbpnUr8PgCn0_R-AMaa_YJXbk5_xi9plpfEzFiyos9BkPiS0FTIEG_1X3wT4TOAAxMfjyXDnE_Cz63Tx2XSu6P0pdPX5z2pJNNkmg02IM8kii7LVSopan2inl4hzA8V-TvGwb4qyvWEBGPJ9fFbXMHCyzTf03ZOlVXFT2KyJKUwFlCLB_XPVeYjhhCpf2Q" />
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface">Fenugreek</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-medium">Methi Dana •
+                                Cleaned</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Medicinal &amp;
+                                Culinary</span>
+                        </div>
+                    </div>
+                    <!-- Coriander Seeds -->
+                    <div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col gap-2 shadow-sm">
+                        <div class="h-28 w-full rounded-lg overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Whole round golden brown Coriander seeds (Dhana) resting in a porcelain bowl, textured detail, warm background."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA434ORSokGVV9DF8HHm-E6WelnFLPVSpAFT8v2HO-VfT-RiorlRpscggYCB5YPG_R1DnfEaAceyU96tq-mCMxgQ0HFoU8ohfN58oMTcBe5HEnW-Hg8Vjbu6SCyKQeezpGf9UhrvXVSZTuOEeY1Rj2ERuLG4TIksyiHQKwnbYu3ANssvZ15U1zU8ItWCN2S3iyOfX3GDSyWs1or_a2tgMRkGDJXkWPzvOlG-SrmqPO7mstKFzVqjQT4mg" />
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface">Coriander Seeds</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-medium">Dhana •
+                                Green/Gold</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Eagle / Scooter
+                                Grade</span>
+                        </div>
+                    </div>
+                    <!-- Black Pepper -->
+                    <div class="bg-surface-container-lowest p-3 rounded-xl flex flex-col gap-2 shadow-sm">
+                        <div class="h-28 w-full rounded-lg overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Pristine white ceramic bowl filled with wrinkled intense black Tellicherry black pepper corns (Mari), cinematic soft shadows."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYHmLgNZ4BO9y9E4xta-cIFKg8IPhEQp65fk6ifkLD_I_b7WrVx-rp_j6In4g1Z9cIivvbOIHfp_fKSA8T6HRM2nsgSDM1d4IVDAhgHhuKLkubMyzKXc_jHH-2-v2-qvtQCN3RGjKJ9HBmo0tthR31GQOqOQssy2TWhGNpG9lArj_vs6pUzSNBfwXIo9qeauxMvvfe3fJ3cQvr8dBBu6FE8vT63gEm0nQrM4_o6iLmwj6JDhvR6MYr2Q" />
+                        </div>
+                        <div class="flex flex-col">
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface">Black Pepper</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-medium">Mari • Garbled
+                                550GL+</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Pungent &amp;
+                                Piperine Rich</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bulk Packing Available Info Banner -->
+                <div class="bg-surface-container-highest p-3 rounded-xl flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[24px] shrink-0">inventory_2</span>
+                    <p class="font-body-sm text-body-sm text-on-surface">
+                        Available in <strong class="text-on-surface">25kg / 50kg Jute &amp; Poly Bags</strong> with
+                        customized private label packaging for international trade.
+                    </p>
+                </div>
+            </section>
+            <!-- Value Propositions & Infrastructure -->
+            <section class="px-margin-mobile py-space-xl flex flex-col gap-space-md">
+                <div class="flex flex-col gap-1">
+                    <span
+                        class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Manufacturing
+                        Capabilities</span>
+                    <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Why K K Spices?</h2>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <!-- Card 1: Journey -->
+                    <div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+                            <span class="material-symbols-outlined text-[22px]">explore</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Our Journey</h3>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Established in the year 2019, K K Spices &amp; Herbs has set new benchmarks in serving
+                            domestic and overseas buyers with uncompromised quality products and reliable freight
+                            schedules. We have won buyer trust all across India and are continuously expanding to
+                            satisfy rising demand.
+                        </p>
+                    </div>
+                    <!-- Card 2: Why Us -->
+                    <div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+                        <div
+                            class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                            <span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Special Processing</h3>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Widely appreciated for offering clean, single-origin grade products. All our spices are
+                            manufactured using a specialized cool-grinding technique that retains natural essential
+                            oils. Spices are offered strictly in their original form without synthetic additives,
+                            artificial flavors, or added moisture.
+                        </p>
+                    </div>
+                    <!-- Card 3: Warehousing -->
+                    <div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+                        <div
+                            class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+                            <span class="material-symbols-outlined text-[22px]">warehouse</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Bulk Warehousing</h3>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">
+                            We maintain a vast warehousing facility in Antalia GIDC, Bilimora, Gujarat to store spices
+                            in clean bulk conditions. Quick automated packaging ensures swift shipment dispatch,
+                            allowing fast turnaround on multi-ton consignments.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Crafted for Excellence Highlight Box (Warm Arch Accent from Inspiration) -->
+            <section class="px-margin-mobile py-space-sm">
+                <div
+                    class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-secondary-container to-secondary text-on-secondary p-space-lg flex flex-col gap-space-md shadow-md">
+                    <!-- Decorative Organic Arc mimicking the original flyer aesthetic -->
+                    <div
+                        class="absolute -bottom-10 -right-10 w-44 h-44 rounded-full bg-primary-container/40 pointer-events-none">
+                    </div>
+                    <div class="relative z-10 flex flex-col gap-2">
+                        <div class="flex items-center gap-1.5">
+                            <span
+                                class="material-symbols-outlined text-[20px] text-surface-bright">workspace_premium</span>
+                            <span
+                                class="font-label-sm text-label-sm uppercase tracking-widest text-surface-bright font-bold">Unwavering
+                                Integrity</span>
+                        </div>
+                        <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-secondary leading-tight">
+                            Crafted for Excellence
+                        </h3>
+                        <p class="font-body-sm text-body-sm text-surface-bright/90 leading-relaxed">
+                            Say goodbye to adulteration worries! Our spices are cultivated and processed with the utmost
+                            integrity, ensuring their authentic aroma, natural pungency, and vibrant hue remain
+                            untouched. Consistently achieve culinary excellence that will leave your customers craving
+                            for more.
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-1">
+                        <a class="h-12 px-space-md rounded-lg bg-surface-bright text-secondary font-label-lg text-label-lg inline-flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform"
+                            href="tel:+919558804605">
+                            <span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+                            <span>Ask For Help: +91 9558804605</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Verified Buyer Testimonials (Swipeable Carousel) -->
+            <section class="px-margin-mobile py-space-xl flex flex-col gap-space-md">
+                <div class="flex flex-col gap-1">
+                    <span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Trusted
+                        Feedback</span>
+                    <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">What Partners Say</h2>
+                </div>
+                <!-- Mobile Scrollable Container -->
+                <div
+                    class="flex gap-space-sm overflow-x-auto pb-2 -mx-margin-mobile px-margin-mobile snap-x snap-mandatory">
+                    <!-- Review 1 -->
+                    <div
+                        class="snap-start shrink-0 w-[82vw] max-w-[320px] bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex text-primary">
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface italic">
+                                “Great, fresh, flavorful spices! I've probably bought many different spices from KKSH
+                                company and they have always been fresh, flavorful &amp; aromatic and the prices are
+                                competitive.”
+                            </p>
+                        </div>
+                        <div class="pt-3 mt-3 flex items-center gap-3">
+                            <div
+                                class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold text-label-md">
+                                HA</div>
+                            <div class="flex flex-col">
+                                <span class="font-label-md text-label-md text-on-surface font-bold">Hemani
+                                    Agrawal</span>
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Spice Dealer •
+                                    Verified Trade</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div
+                        class="snap-start shrink-0 w-[82vw] max-w-[320px] bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex text-primary">
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface italic">
+                                “Best A Grade Spices at reasonable price, Best in Town. K K Spices always sells only
+                                best quality products. Reliable company in town to buy any spices.”
+                            </p>
+                        </div>
+                        <div class="pt-3 mt-3 flex items-center gap-3">
+                            <div
+                                class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold text-label-md">
+                                SM</div>
+                            <div class="flex flex-col">
+                                <span class="font-label-md text-label-md text-on-surface font-bold">Sanjay
+                                    Malhotra</span>
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Super Stockist •
+                                    Regional Hub</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div
+                        class="snap-start shrink-0 w-[82vw] max-w-[320px] bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex text-primary">
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-on-surface italic">
+                                “I am getting spices from K K Spices and Herbs. Very fresh product, affordable pricing
+                                and fast shipping. Thanks for making my business and life easier.”
+                            </p>
+                        </div>
+                        <div class="pt-3 mt-3 flex items-center gap-3">
+                            <div
+                                class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold text-label-md">
+                                NR</div>
+                            <div class="flex flex-col">
+                                <span class="font-label-md text-label-md text-on-surface font-bold">Nitin Rawal</span>
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Retailer • Gujarat
+                                    Retail Network</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Amazon & Pan-India Distribution Banner -->
+            <section class="px-margin-mobile py-space-sm">
+                <div
+                    class="relative overflow-hidden rounded-2xl bg-surface-container p-space-md flex flex-col gap-space-sm shadow-sm">
+                    <div class="h-32 w-full rounded-xl overflow-hidden relative">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Wide array of spice powders and whole spices arranged in artistic wooden bowls across an earthy rustic table with bay leaves, fresh herbs, and cardamom pods, high quality cinematic composition."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL3ZRN3osTJZiTerN2OVslDYFanlQANjqt2t1448haDe0_XR-d4tT84QXyyGlOepRFkS-J4EU0HQkCU5YSpY1bLP_glA8czicm_fmnaKeMIv1ozRh78MzpbVy2TJf4noCRrS9bCssDOiq3tR2rlHjEawQhu0GYg3iGfZsCZlxpeKpOnoZJK90BZttAhlWyxi6DW5uAHjRuk2mhMZXHYbQVP8NBm0Gv8yTUzmvup5B9ecNkN3IZmllBRQ" />
+                        <div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <div class="flex items-center gap-1.5 text-secondary">
+                            <span class="material-symbols-outlined text-[20px]">local_shipping</span>
+                            <span class="font-label-sm text-label-sm font-bold uppercase">Online • Pan-India
+                                Dispatch</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface">Shop Our Quality Spices</h3>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">
+                            We are available on Amazon now. You can shop our premium quality spices online with fast
+                            doorstep delivery all over India.
+                        </p>
+                    </div>
+                    <div class="pt-1">
+                        <button
+                            class="w-full h-11 rounded-lg bg-secondary-container text-on-secondary font-label-md text-label-md uppercase tracking-wider active:scale-95 transition-transform flex items-center justify-center gap-2"
+                            onclick="document.getElementById('enquiry-section').scrollIntoView({behavior: 'smooth'})">
+                            <span class="material-symbols-outlined text-[18px]">hub</span>
+                            <span>Join Distributor Network Today</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Interactive Wholesale Enquiry Form Section -->
+            <section class="px-margin-mobile py-space-xl flex flex-col gap-space-md" id="enquiry-section">
+                <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-1 text-primary">
+                        <span class="material-symbols-outlined text-[20px]">handshake</span>
+                        <span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Direct Manufacturer
+                            Rates</span>
+                    </div>
+                    <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Wholesale Enquiry Form
+                    </h2>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Ready to grow your spice business with us? Fill out the form below to receive our complete
+                        commercial catalog, grade spec sheets, and distributor pricing.
+                    </p>
+                </div>
+                <!-- Form Container -->
+                <form class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-sm"
+                    id="spice-enquiry-form"
+                    onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden');">
+                    <!-- Full Name -->
+                    <div class="flex flex-col gap-1">
+                        <label class="font-label-sm text-label-sm text-on-surface font-semibold" for="lead-name">Your
+                            Name <span class="text-secondary">*</span></label>
+                        <div class="relative">
+                            <input
+                                class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                                id="lead-name" placeholder="e.g. Rajesh Shah" required="" type="text" />
+                        </div>
+                    </div>
+                    <!-- Company Name -->
+                    <div class="flex flex-col gap-1">
+                        <label class="font-label-sm text-label-sm text-on-surface font-semibold"
+                            for="lead-company">Company Name <span class="text-secondary">*</span></label>
+                        <input
+                            class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                            id="lead-company" placeholder="e.g. Apex Global Foods Ltd" required="" type="text" />
+                    </div>
+                    <!-- Phone Number -->
+                    <div class="flex flex-col gap-1">
+                        <label class="font-label-sm text-label-sm text-on-surface font-semibold" for="lead-phone">Phone
+                            Number <span class="text-secondary">*</span></label>
+                        <div class="relative flex items-center">
+                            <span class="absolute left-3 font-body-sm text-body-sm text-on-surface-variant">+91</span>
+                            <input
+                                class="w-full h-11 pl-12 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                                id="lead-phone" placeholder="95588 04605" required="" type="tel" />
+                        </div>
+                    </div>
+                    <!-- Email Address -->
+                    <div class="flex flex-col gap-1">
+                        <label class="font-label-sm text-label-sm text-on-surface font-semibold" for="lead-email">Email
+                            Address <span class="text-secondary">*</span></label>
+                        <input
+                            class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                            id="lead-email" placeholder="wholesale@yourcompany.com" required="" type="email" />
+                    </div>
+                    <!-- Business Type Pill Selectors -->
+                    <div class="flex flex-col gap-1.5 pt-1">
+                        <label class="font-label-sm text-label-sm text-on-surface font-semibold">Business Type <span
+                                class="text-secondary">*</span></label>
+                        <div class="grid grid-cols-2 gap-2" id="business-types-group">
+                            <label
+                                class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer active:scale-95 transition-all">
+                                <input checked="" class="accent-primary" name="business_type" type="radio"
+                                    value="distributor" />
+                                <span class="font-body-sm text-body-sm text-on-surface">Distributor</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer active:scale-95 transition-all">
+                                <input class="accent-primary" name="business_type" type="radio" value="wholesaler" />
+                                <span class="font-body-sm text-body-sm text-on-surface">Wholesaler</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer active:scale-95 transition-all">
+                                <input class="accent-primary" name="business_type" type="radio" value="exporter" />
+                                <span class="font-body-sm text-body-sm text-on-surface">Exporter</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer active:scale-95 transition-all">
+                                <input class="accent-primary" name="business_type" type="radio" value="retailer" />
+                                <span class="font-body-sm text-body-sm text-on-surface">Retailer</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- City & State Row -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="flex flex-col gap-1">
+                            <label class="font-label-sm text-label-sm text-on-surface font-semibold"
+                                for="lead-city">City</label>
+                            <input
+                                class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                                id="lead-city" placeholder="e.g. Mumbai" type="text" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-label-sm text-label-sm text-on-surface font-semibold"
+                                for="lead-state">State / Province</label>
+                            <input
+                                class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                                id="lead-state" placeholder="e.g. Gujarat" type="text" />
+                        </div>
+                    </div>
+                    <!-- Requirements Textarea -->
+                    <div class="flex flex-col gap-1">
+                        <label class="font-label-sm text-label-sm text-on-surface font-semibold"
+                            for="lead-requirements">Enter Your Requirements <span
+                                class="text-secondary">*</span></label>
+                        <textarea
+                            class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors resize-none"
+                            id="lead-requirements"
+                            placeholder="Mention products (Turmeric, Red Chilli, Cumin), desired tonnage, or packing specifications..."
+                            required="" rows="3"></textarea>
+                    </div>
+                    <!-- Submit CTA -->
+                    <button
+                        class="mt-2 w-full h-12 rounded-lg bg-secondary-container text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-transform"
+                        type="submit">
+                        <span class="material-symbols-outlined text-[20px]">send</span>
+                        <span>Submit Enquiry</span>
+                    </button>
+                    <!-- Instant Success Toast Feedback -->
+                    <div class="hidden p-3 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center gap-2"
+                        id="form-feedback">
+                        <span class="material-symbols-outlined text-[20px]">check_circle</span>
+                        <span class="font-body-sm text-body-sm font-medium">Thank you! Our wholesale sales desk will
+                            contact you within 2 business hours.</span>
+                    </div>
+                </form>
+                <!-- Tap-to-Connect Facility Details -->
+                <div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-sm">
+                    <span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Factory
+                        &amp; Head Office</span>
+                    <div class="flex flex-col gap-space-xs">
+                        <a class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors"
+                            href="tel:+919558804605">
+                            <div
+                                class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+                                <span class="material-symbols-outlined text-[20px]">call</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Call Wholesale
+                                    Direct</span>
+                                <span class="font-headline-sm text-headline-sm text-on-surface">+91 9558804605</span>
+                            </div>
+                        </a>
+                        <a class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors"
+                            href="mailto:kkspicesandherbs@gmail.com">
+                            <div
+                                class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+                                <span class="material-symbols-outlined text-[20px]">mail</span>
+                            </div>
+                            <div class="flex flex-col min-w-0">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Email Desk</span>
+                                <span
+                                    class="font-body-sm text-body-sm text-on-surface font-semibold truncate">kkspicesandherbs@gmail.com</span>
+                            </div>
+                        </a>
+                        <div class="flex items-start gap-3 p-2">
+                            <div
+                                class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface shrink-0">
+                                <span class="material-symbols-outlined text-[20px]">location_on</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Factory &amp; Export
+                                    Depot</span>
+                                <p class="font-body-sm text-body-sm text-on-surface">
+                                    2862 Behind Tropical, Antalia GIDC, Near Bilimora Antalia, Gujarat 396325, India
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Factory Location Map Snippet -->
+                    <div class="w-full h-36 rounded-xl bg-cover bg-center overflow-hidden shadow-inner mt-1"
+                        data-location="Antalia GIDC Bilimora Gujarat India"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrCymukMKPQIA9hhAMSVps9lCkypbfuI5neq8I3kRUhOESe_Mdw3RumjpywVIRZY9aiUk_iqywxzYUYi82hweUE9aJa1A25S8m2ZSMzf5Fx3qiOrGe7XB_EfEyDpkSvAgkSH8Nqc3Dmj3xYlUS9z1tvsBUCxO-23VhAq-9CzCOtzSiyuOvBZBZTOELidZexTUSN3LGvzfL_cZThNnaW-ODBuHrL3EpBEmu418Zii2_jYXrvcMqM9h6FA')">
+                    </div>
+                    <!-- Social Proof Channels -->
+                    <div class="flex items-center justify-between pt-2">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">Official Social
+                            Channels</span>
+                        <div class="flex items-center gap-2">
+                            <a aria-label="K K Spices Facebook"
+                                class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors"
+                                href="https://www.facebook.com/kkspicesandherbs/">
+                                <span class="material-symbols-outlined text-[18px]">thumb_up</span>
+                            </a>
+                            <a aria-label="K K Spices Instagram"
+                                class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-colors"
+                                href="https://instagram.com/kk_spices_and_herbs">
+                                <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+                            </a>
+                            <a aria-label="K K Spices LinkedIn"
+                                class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-tertiary hover:bg-tertiary hover:text-on-tertiary transition-colors"
+                                href="https://www.linkedin.com/company/k-k-spices-and-herbs/">
+                                <span class="material-symbols-outlined text-[18px]">business_center</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer
+            class="w-full mt-auto bg-surface-container-low px-margin-mobile pt-space-xl pb-10 text-on-surface flex flex-col gap-space-lg">
+            <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center gap-2"><span
+                        class="material-symbols-outlined text-primary text-[24px]">spa</span>
+                    <h2 class="font-headline-sm text-headline-sm text-primary">K K Spices And Herbs</h2>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Global wholesale manufacturer and bulk
+                    exporter of pristine whole spices, ground aromatic blends, and certified botanicals from Gujarat,
+                    India.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-space-sm font-body-sm text-body-sm"><a
+                    class="flex items-center gap-space-sm text-on-surface py-1 hover:text-primary"
+                    href="tel:+919558804605"><span
+                        class="material-symbols-outlined text-secondary text-[20px]">phone_in_talk</span><span>+91
+                        9558804605</span></a><a
+                    class="flex items-center gap-space-sm text-on-surface py-1 hover:text-primary"
+                    href="mailto:kkspicesandherbs@gmail.com"><span
+                        class="material-symbols-outlined text-secondary text-[20px]">mail</span><span
+                        class="truncate">kkspicesandherbs@gmail.com</span></a>
+                <div class="flex items-start gap-space-sm text-on-surface-variant py-1"><span
+                        class="material-symbols-outlined text-secondary text-[20px] shrink-0">location_on</span><span>Export
+                        Zone, Agricultural APMC Market Yard, Unjha, Gujarat 384170, India</span></div>
+            </div>
+            <div class="flex items-center justify-between pt-space-sm">
+                <div class="flex items-center gap-space-sm"><a aria-label="WhatsApp Trade Desk"
+                        class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-tertiary hover:bg-surface-container-high transition-colors"
+                        href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><a
+                        aria-label="Global Spec Catalog"
+                        class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors"
+                        href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span></a><a
+                        aria-label="Export Certifications"
+                        class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:bg-surface-container-high transition-colors"
+                        href="#"><span class="material-symbols-outlined text-[20px]">verified</span></a><a
+                        aria-label="Company Location"
+                        class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+                        href="#"><span class="material-symbols-outlined text-[20px]">map</span></a></div><span
+                    class="font-label-sm text-label-sm text-on-surface-variant">ISO 22000 • APEDA</span>
+            </div>
+            <div class="text-center pt-space-xs">
+                <p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 K K Spices And Herbs. All rights
+                    reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(58,42,10,0.06)]"
+        data-active-classes="text-primary font-bold">
+        <div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page"
+                class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary font-bold"
+                data-path="home-catalog" href="#"><span
+                    class="material-symbols-outlined text-[22px]">storefront</span><span
+                    class="font-label-sm text-label-sm">Products</span></a><a
+                class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors"
+                data-path="wholesale-range" href="#"><span
+                    class="material-symbols-outlined text-[22px]">package_2</span><span
+                    class="font-label-sm text-label-sm">Wholesale</span></a><a
+                class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-secondary font-bold transition-colors"
+                data-path="direct-call" href="tel:+919558804605">
+                <div
+                    class="w-10 h-10 -mt-3 rounded-full bg-secondary-container flex items-center justify-center shadow-md text-on-secondary">
+                    <span class="material-symbols-outlined text-[20px]">call</span></div><span
+                    class="font-label-sm text-label-sm mt-0.5">Call Now</span>
+            </a><a
+                class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors"
+                data-path="request-quote" href="#"><span
+                    class="material-symbols-outlined text-[22px]">request_quote</span><span
+                    class="font-label-sm text-label-sm">RFQ</span></a><a
+                class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-colors"
+                data-path="company-profile" href="#"><span
+                    class="material-symbols-outlined text-[22px]">business</span><span
+                    class="font-label-sm text-label-sm">Company</span></a></div>
+    </nav>
+</body>
+
+</html>
